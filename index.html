@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Blog</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    /* Background image with gradient overlay */
+    body {
+      background: linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    /* Content container overlay */
+    .content-overlay {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      padding: 20px;
+      color: #000;
+    }
+
+    /* Card shadow */
+    .card {
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Footer */
+    footer {
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MyBlog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Blog Posts -->
+  <div class="container my-5 content-overlay">
+    <h1 class="text-center text-primary mb-4">Latest Blog Posts</h1>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://picsum.photos/350/200" class="card-img-top" alt="Blog 1">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Post Title 1</h5>
+            <p class="card-text">Short description of the blog post goes here...</p>
+            <a href="#" class="btn btn-outline-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://picsum.photos/350/200" class="card-img-top" alt="Blog 2">
+          <div class="card-body">
+            <h5 class="card-title text-success">Post Title 2</h5>
+            <p class="card-text">Another short description of the blog post...</p>
+            <a href="#" class="btn btn-outline-success">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://picsum.photos/350/200" class="card-img-top" alt="Blog 3">
+          <div class="card-body">
+            <h5 class="card-title text-danger">Post Title 3</h5>
+            <p class="card-text">A different short description for this post...</p>
+            <a href="#" class="btn btn-outline-danger">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-3 mt-5">
+    <p>© 2025 MyBlog. All rights reserved.</p>
+    <div>
+      <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
